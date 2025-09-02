@@ -12,6 +12,11 @@ let newText = text.toLowerCase();
     setText(newText);
 }
 
+const handleClearClick = ()=>{
+let newText = '';
+    setText(newText);
+}
+
 const handleOnChange = (event)=>{
     console.log("onchane");
     setText(event.target.value);
@@ -27,6 +32,7 @@ const handleOnChange = (event)=>{
 </div>
 <button className="btn btn-primary mx-1" onClick={handleUpClick}>Convert to Uppercase</button>
 <button className="btn btn-primary mx-1" onClick={handleLoClick}>Convert to Lowercase</button>
+<button className="btn btn-primary mx-1" onClick={handleClearClick}>Clear Text</button>
 </div>
 <div className="container my-3"></div>
 <h1>Your text summary</h1>
